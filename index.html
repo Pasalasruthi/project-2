@@ -1,1 +1,132 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css" integrity="sha512-LKG0Zi6duJ5mwncLtQVchN0iF8fWmcxApuX9pqGq7ITgwQDWR9EqZFsrV9TXfE9pPRa1J6GVnsBl7gKxAyllaA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Homepage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    #google-search {
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    #google-search input[type="text"] {
+      width: 600px;
+      height:25px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    #google-search button {
+      padding: 10px 20px;
+      background-color: #f0f0f0;
+      border:none;
+      font-size: 16px;
+      cursor: pointer;
+      outline: none;
+    }
+    #footer {
+      background-color: #f2f2f2;
+      height:100px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid #ddd;
+    }
+#google{
+margin-top:50px;
+height:100px;
+}
+#gsearch{
+margin-left:60px;
+margin-top:30px;
+}
+#btn2{
+margin-left:20px;
+}
+#search{
+position:absolute;
+left:500px;
+top:250px;
+}
+#mic{
+position:absolute;
+right:490px;
+color:blue;
+top:250px;
+}
+#cam{
+position:absolute;
+right:450px;
+color:blue;
+top:250px;
+}
+#p1{
+margin-left:30px;
+}
+span{
+margin-left:30px;
+margin-top:25px;
+}
+#s2{
+margin-left:800px;
+}
+a{
+margin-left:3px;
+text-decoration:none;
+}
+  </style>
+<script>
+$(document).ready(function(){
+$('input[type="text"]').click(function(){
+$("i").fadeToggle(1);
+});
+});
+</script>
+</head>
+<body>
+  <div id="google-search">
+    <center>
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" id="google">
+    </center>    
+    <input type="text"  id="gsearch">
+    <i  class="fa fa-search" id="search"></i>
+    <i class="fa fa-microphone" id="mic"></i>
+<i class="fa fa-camera" id="cam"></i>
+<br>
+<br>
+<br>
+<center>
+    <button>Google Search</button>
+    <a href="https://doodles.google/"><button  id="btn2">I'm Feeling Lucky</button></a>
+<p class='p'>Google offered in: <a href="#">English</a>  <a href="#">हिंदी</a>  <a href="#">తెలుగు </a>  <a href="#">ಕನ್ನಡ</a>  <a href="#">മലയാളം </a>  <a href="#">தமிழ்</a> </p>
+</center>
+  </div>
+<footer>
+  <div id="footer">
+<p id="p1">India</p>
+<hr>
+<span>About</span>
+<span>Advertising</span>
+<span>business</span>
+<span>How Search Works</span>
+<span id="s2">Privacy</span>
+<span>Terms</span>
+<span>Settings</span>
+  </div>
+</footer>
+</body>
+</html>
